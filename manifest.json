@@ -1,0 +1,20 @@
+  {
+    "name": "Thingdown",
+    "version": "1.0",
+    "description": "The amazing thingdown extension!",
+    "browser_action": {
+  		"default_icon": "icon.png"
+	},
+    "content_scripts": [
+    	{
+       	"matches": [
+         	"<all_urls>"
+       	],
+       	"js": ["jquery-3.5.1.min.js", "content.js"]
+    	}
+    ],
+    "background": {
+  		"scripts": ["background.js"]
+	},
+    "manifest_version": 2
+  }
